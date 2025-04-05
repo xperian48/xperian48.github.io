@@ -1,28 +1,62 @@
-html{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-img.sticklogo{
+img.sticklogo {
   width: 25%;
-  height:25%;
+  height: 25%;
   position: sticky;
   top: 0;
   display: block;
   margin: 0 auto;
 }
 
-header{
-  text-align: center;
+#toggle {
+  margin: 1%;
+  padding: 1.5%;
+  border: 2px solid;
+  background: var(--color-bg);
+  color: var(--color-fg);
+  position: absolute;
+  right: 0%;
+  top: 0%;
 }
 
-#underConstruction{
+body {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+}
+
+header {
+  text-align: center;
+  h2 {
+    text-decoration: underline;
+  }
+}
+
+#underConstruction {
   padding: 20px;
   border: 2px dashed olive;
 }
 
-footer{
+footer {
   text-align: center;
   padding: 35px;
   background-color: black;
   color: white;
+}
+
+.about-div {
+  border-radius: 2%;
+  border: 5px solid;
+  border-color: var(--color-fg);
+  padding: 8%;
+  text-align: center;
+  margin: 6%;
+}
+
+.dark-mode {
+  --color-fg: #ffffff;
+  --color-bg: #343434;
 }
